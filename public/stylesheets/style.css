@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width:1000px;
+  margin: 0 auto;
+  background-color: lightgreen;
+}
+
+a {
+  color: #00B7FF;
+}
+form{
+	width:363px;
+	margin: 0 auto;
+	background-color: lightpink;
+	padding: 30px;
+}
+input,textarea{
+	text-align: center;
+	color: green;
+	clear: both;
+	border-radius: 5px;
+	background-color:lightyellow;
+	width: 80%;
+	padding: 10px;
+	margin: 0 auto;
+}
+button{
+	background-color: pink;
+	border-radius: 6px;
+	padding: 5px;
+	text-align: center;
+}
+.nav{
+	width:400px;
+	float:right;
+}
+ul{
+	display: inline;
+	list-style: none;
+}
+li{
+	float:right;
+	margin-right: 10px;
+	display: inline !important;
+	list-style: none;
+}
+.mypost{
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #DDDDDD;
+	margin:2px;
+}

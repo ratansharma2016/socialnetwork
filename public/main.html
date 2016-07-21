@@ -1,0 +1,13 @@
+<div ng-controller="mainController as postCtrl">
+<form  ng-show="authenticated">
+	<h2>{{current_user}}</h2>
+	<input type=text ng-model="newPost.username" value="current_user" style="display:none;">
+	<textarea ng-model="newPost.text" required></textarea>
+	<button ng-hide="updatedbtn" ng-click="post()">PostNow</button><button ng-show="updatedbtn" ng-click="update()">Update</button>
+</form>
+<div class="mypost" ng-repeat="post in posts">
+<p><img ng-src="{{post.imgUrl}}" width=50 height=50> {{post.text}}</p>
+<blockquote>by --@{{post.username}}</blockquote>
+ <a href="#/" ng-click="remove(post._id,post.username)" ng-show="post.username===current_user">Delete Post</a> <a href="#/" ng-click="edit(post._id,post.username)" ng-show="post.username===current_user">Edit Post</a>
+</div>
+</div>
